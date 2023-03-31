@@ -1,2 +1,2 @@
 # mini-press
-A minimal open source wordpress theme for neat bloggers.
+A minimal open source wordpress theme for tech bloggers.
