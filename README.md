@@ -1,6 +1,8 @@
 # mini-press
 A minimal open source wordpress theme for tech bloggers.
 
+**[LIVE DEMO](https://mgks.dev/blog/)**
+
 ## GETTING STARTED
 Download zip from here and install directly into wordpress.
 
