@@ -1,0 +1,55 @@
+/*
+Theme Name: mini-press
+Author: Ghazi Khan
+Author URI: https://mgks.dev
+Version: 1.0
+*/
+
+@import "https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap";
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap";
+:root {
+    --font-sans: "DM Sans", sans-serif;
+    --font-title: "DM Serif Display", sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --theme-color: #1876d2;
+    --theme-lcolor: #6397c8;
+    --theme-dark: #0a5eb0;
+    --theme-red: #d51313;
+    --theme-lred: #ff6c6c;
+    --theme-background: #f1f1f1;
+    --theme-lgrey: #a1cdf7;
+    --theme-exgrey: rgba(168, 168, 168, 0.27);
+    --theme-ligrey: #757980;
+    --theme-grey: #606060;
+    --theme-black: #2a2a2a;
+    --theme-white: #fff;
+    --theme-light: #1876d269;
+    --theme-backdrop: #a8d0ff21;
+    --theme-progdrop: #9500ff17;
+    --theme-progdrop-dark: #7702cb17;
+    --theme-dark-backdrop: #1a5eb0a1;
+    --dark-background:#001830
+}
+body{
+	margin:0;
+  font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+  max-height:100vh;
+	color:var(--theme-black);
+}
+a{
+	text-decoration:none;
+	color:var(--theme-dark);
+}
+.container h2{font-family:var(--font-title);font-size:2em}
+.container p{letter-spacing:.25px;line-height:1.25em}
+.container{max-width:920px;margin:0 auto;padding:0 5%}
+header.site-header{width:80%;height:100px;margin:0 auto;padding:1em 10%}
+header.site-header h1{margin:0}
+header.site-header .custom-logo{max-width:7em;height:inherit;float:left;}
+ul.menu{list-style:none;float:left;padding:1.55em 5% 0}
+ul.menu li{display:inline-block;letter-spacing:.75px;margin:0 .5em;}
+.container .wp-block-code{background-color:var(--theme-black);color:#fff;padding:1.5em;border-radius:5px}
+footer.site-footer{padding:5em;text-align:center}
+.post-page h2.post-page-headline{font-size:2.5em}
+.post-page img.post-page-banner{width:100%;border-radius:5px}
