@@ -8,6 +8,9 @@ Download zip from here and install directly into wordpress.
 
 ## RELEASE NOTE
 ```
+v1.0 (alpha)
+  - Updated binary
+  - No other changes
 v1.0 (Unreleased; as of 2/4/23)
   - Basic Design with only background color and footer customisation option
   - Index page with post loop, no pagination
