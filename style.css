@@ -44,9 +44,9 @@ a{
 .container h2{font-family:var(--font-title);font-size:2em}
 .container p{letter-spacing:.25px;line-height:1.25em}
 .container{max-width:920px;margin:0 auto;padding:0 5%}
-header.site-header{width:80%;height:100px;margin:0 auto;padding:1em 10%}
+header.site-header{width:80%;overflow: hidden;margin:0 auto;padding:1em 10%}
 header.site-header h1{margin:0}
-header.site-header .custom-logo{max-width:7em;height:inherit;float:left;}
+header.site-header .custom-logo{width: 14em;height:inherit;float:left;}
 ul.menu{list-style:none;float:left;padding:1.55em 5% 0}
 ul.menu li{display:inline-block;letter-spacing:.75px;margin:0 .5em;}
 .container .wp-block-code{background-color:var(--theme-black);color:#fff;padding:1.5em;border-radius:5px}
