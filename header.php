@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
     <header class="site-header">
-        <h1><?php the_custom_logo(); ?></h1>
+        <div class="site-logo"><?php the_custom_logo(); ?></div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'main-header' ) );
 ?>
     </header> 
