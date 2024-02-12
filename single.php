@@ -1,24 +1,26 @@
 <?php
- 
+
 get_header();
 
 while ( have_posts() ) : the_post();
 
-    echo '<div class="container post-page">';
-
+    echo '<div class="post-page-banner-wrap"><h2 class="post-page-headline">';
+    // '<a href="';
+    //    the_permalink();
+    //echo '">';
+        echo the_title();
+    //echo '</a>';
+    echo '</h2><img class="post-page-banner"';
     if ( has_post_thumbnail()) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-        echo '<img class="post-page-banner" src="' . $large_image_url[0] . '" />';
+        echo ' src="' . $large_image_url[0] . '"';
     }
+    echo '></div>';
 
-    echo '<h2 class="post-page-headline"><a href="';
-        the_permalink();
-    echo '">';
-        the_title();
-    echo '</a></h2>';
+    echo '<div class="container post-page">';
 
     the_content();
-    
+
     if ( comments_open() || get_comments_number() ) :
         comments_template();
     endif;
