@@ -56,6 +56,22 @@ function mini_press_customization( $wp_customize ) {
         'section'    => 'mini_press_colors',
         'settings'   => 'mini_press_bg_color',
     ) ) );
+    $wp_customize->add_section( 'mini_press_fonts' ,
+    array(
+        'title'      => __( 'Font Options', 'mini_press' ),
+        'priority'   => 3,
+        'panel'      => 'mini_press_panel'
+    )
+    );
+    $wp_customize->add_setting( 'mini_press_s_fonts' , array(
+        'default'     => '#ffffff',
+        'transport'   => 'refresh',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bg_color', array(
+        'label'      => __( 'Post Title Font', 'mini_press' ),
+        'section'    => 'mini_press_fonts',
+        'settings'   => 'mini_press_s_fonts',
+    ) ) );
 }
 add_action( 'customize_register', 'mini_press_customization' );
 
